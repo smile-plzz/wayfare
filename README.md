@@ -10,9 +10,20 @@ The planned product is a mobile-friendly web app paired with an Apple Shortcut. 
 
 ## Current status
 
-**Phase:** documentation and feasibility validation
+**Phase:** local capture prototype
 
-No production application exists yet. The first experiment will test capture quality using real Facebook, Instagram, and YouTube examples before the larger planner is built.
+A local-first web prototype now covers manual and URL-prefilled capture, a durable browser inbox, evidence status, collection filters, two administrator identities, separate ratings, match scores, and JSON export. It uses clearly labeled sample records and has not yet been deployed or connected to a shared backend. The next experiment will test capture quality using real Facebook, Instagram, and YouTube examples.
+
+## Run the prototype
+
+From `apps/web`:
+
+```bash
+pnpm install
+pnpm dev
+```
+
+Use `pnpm build` for a production build and `pnpm lint` for static checks. The prototype currently stores data in the browser under `wayfare:places:v1`.
 
 ## Product principles
 
